@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destructuring & Spread Operator Example</title>
+</head>
+<body>
+  <h1>Destructuring & Spread/Rest Operator in JavaScript</h1>
+
+  <script>
+    // 1. Array Destructuring
+    const fruits = ['Apple', 'Banana', 'Mango'];
+    const [first, second] = fruits;
+    console.log("First Fruit:", first);  // Apple
+    console.log("Second Fruit:", second); // Banana
+
+    // 2. Object Destructuring
+    const person = { name: 'Ravi', age: 22 };
+    const { name, age } = person;
+    console.log("Name:", name); // Ravi
+    console.log("Age:", age); // 22
+
+    // 3. Spread Operator (copying/merging arrays)
+    const nums1 = [1, 2, 3];
+    const nums2 = [...nums1, 4, 5];
+    console.log("Spread Array:", nums2); // [1, 2, 3, 4, 5]
+
+    // 4. Rest Operator (collect remaining items)
+    const [a, b, ...rest] = [10, 20, 30, 40];
+    console.log("a:", a);      // 10
+    console.log("b:", b);      // 20
+    console.log("rest:", rest); // [30, 40]
+  </script>
+</body>
+</html>
