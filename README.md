@@ -1,151 +1,28 @@
-﻿# Mern-javascript
-# 📦 JavaScript Variables & Data Types
+📘 JavaScript Core Concepts Covered
+This repository covers all major JavaScript concepts, ideal for learning and interview preparation:
 
-A **variable** in JavaScript is like a container where we can store data. This data can be **retrieved, updated**, and **used repeatedly** throughout the code.
+✅ Variables & Data Types
 
----
+✅ Operators & Expressions
 
-## 📝 Declaration and Definition
+✅ Conditional Statements
 
-To **declare** a variable in JavaScript, use `let` or `var` followed by the variable name:
+✅ Loops (for, while, do-while)
 
-```javascript
-let placement_results;
-var myName;
-These variables are declared but not yet defined, so accessing them returns undefined.
+✅ Functions (Normal, Arrow, IIFE)
 
-To define or assign values:
+✅ Arrays & Objects (Creation, Traversal, Built-in Methods)
 
-javascript
-Copy code
-placement_results = 100;
-myName = "AccioJob";
-Declaration and definition in one line:
+✅ Strings & String Methods
 
-javascript
-Copy code
-let placement_results = 100;
-var myName = "AccioJob";
-🔤 Variable Naming Rules
-Can contain letters, digits, underscores (_), and dollar signs ($)
+✅ Scope, Hoisting, Closures
 
-Must begin with a letter, underscore (_), or dollar sign ($)
+✅ Callbacks, Promises, Async/Await
 
-JavaScript is case-sensitive (myVar ≠ MyVar)
+✅ Error Handling using try-catch
 
-🧩 Data Types in JavaScript
-Data types define the kind of value a variable can hold.
+✅ ES6+ Features (let/const, spread/rest operators, destructuring, etc.)
 
-🔹 Primitive Data Types
-Type	Description	Example
-String	Text enclosed in quotes	"AccioJob"
-Number	Numeric value	100
-Boolean	Logical value: true or false	true
-Undefined	Declared but not assigned a value	let x; → undefined
-Null	Intentional absence of value	let x = null;
-Symbol	Unique, immutable value	Symbol("id")
-BigInt	Large integers beyond safe limits	123456789012345678901n
+✅ DOM Manipulation (Basic to Intermediate)
 
-🔸 Object (Non-Primitive)
-Used to store collections of data and more complex entities:
-
-javascript
-Copy code
-let person = { name: "Alice", age: 25 };
-🔄 Dynamic Typing
-JavaScript is a dynamically typed language:
-
-javascript
-Copy code
-let score = 100;       // Number
-score = "Topper";      // Now a String
-This flexibility enables dynamic code but requires careful handling.
-
-💬 Comments in JavaScript
-Used to explain and document code.
-
-Single-line Comment:
-javascript
-Copy code
-// This is a single-line comment
-Multi-line Comment:
-javascript
-Copy code
-/*
- This is a
- multi-line comment
-*/
-🕵️‍♂️ Checking Data Type
-Use the typeof operator to check the type of a variable:
-
-javascript
-Copy code
-console.log(typeof placement_results); // "number"
-console.log(typeof myName);           // "string"
-✅ Conclusion
-Understanding variables and data types is essential for building robust JavaScript applications. Mastering these will help you:
-
-Write cleaner code
-
-Build dynamic features
-
-Avoid type-related bugs
-
-📚 References
-JavaScript Variables - W3Schools
-
-JavaScript Data Types - W3Schools
-
-JavaScript Data Types - MDN Web Docs
-
-# Destructuring & Spread/Rest Operator in JavaScript
-
-## ✅ Destructuring
-Destructuring allows unpacking values from arrays or properties from objects into distinct variables.
-
-### ✳️ Array Destructuring
-```js
-const fruits = ['Apple', 'Banana', 'Mango'];
-const [first, second] = fruits;
-console.log(first);  // Apple
-console.log(second); // Banana
-✳️ Object Destructuring
-js
-Copy code
-const person = { name: 'Ravi', age: 22 };
-const { name, age } = person;
-console.log(name); // Ravi
-console.log(age);  // 22
-✅ Spread Operator (...)
-The spread operator expands iterable items (like arrays/objects) into individual elements.
-
-js
-Copy code
-const nums1 = [1, 2, 3];
-const nums2 = [...nums1, 4, 5];
-console.log(nums2); // [1, 2, 3, 4, 5]
-✅ Rest Operator (...)
-The rest operator collects remaining elements into an array.
-
-js
-Copy code
-const [a, b, ...rest] = [10, 20, 30, 40];
-console.log(a);    // 10
-console.log(b);    // 20
-console.log(rest); // [30, 40]
-🎯 How They Simplify Code:
-Make data extraction short and clean.
-
-Avoid repetitive access (arr[0], obj.prop).
-
-Easily clone/merge arrays or objects.
-
-Useful in function arguments.
-
-js
-Copy code
-function sum(...numbers) {
-  return numbers.reduce((acc, curr) => acc + curr, 0);
-}
-console.log(sum(1, 2, 3, 4)); // 10
- 
+✅ Event Handling
