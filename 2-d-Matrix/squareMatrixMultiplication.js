@@ -8,6 +8,6 @@ function multiplyMatrices(A, B, N) {
             }
         }
     }
-
+   
     return result;
 }

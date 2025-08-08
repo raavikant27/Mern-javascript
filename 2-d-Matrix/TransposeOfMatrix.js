@@ -7,14 +7,14 @@ function rotateMatrixInPlace(matrix) {
       [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
     }
   }
-
   // Reverse each row
   for (let i = 0; i < n; i++) {
     matrix[i].reverse();
-  }
+  } 
 
   return matrix;
 }
+
 
 // Example usage:
 let matrix = [
@@ -31,3 +31,4 @@ console.log(result);
 //   [8, 5, 2],
 //   [9, 6, 3]
 // ]
+y
