@@ -43,6 +43,9 @@
 // );
 
 //notes-let see how we use asyn function along with await , nd how will handle actual Promise
+//basic way to hadnle  the async function nd 
+//1- await is always used  inside in async function
+
 const p=new Promise((resolve,reject)=>{
     resolve("Promise Resolved Value");
 });
